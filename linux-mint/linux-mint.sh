@@ -33,7 +33,3 @@ echo "Comment=Eclipse Integrated Development Environment" >> eclipse.desktop
 echo "Icon=/opt/eclipse/icon.xpm" >> eclipse.desktop
 echo "Exec=/opt/eclipse/eclipse" >> eclipse.desktop
 echo "Categories=Development;IDE;Java;" >> eclipse.desktop
-
-# Reboot!
-sudo reboot
-
