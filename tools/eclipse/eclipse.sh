@@ -43,8 +43,10 @@ fi
 # Extract Eclipse
 ###############################################
 
+sudo rm -rf /opt/eclipse
 sudo tar -zxf /opt/eclipse.tar.gz -C /opt/
-sudo rm /opt/eclipse.tar.gz
+sudo rm -f /opt/eclipse.tar.gz
+sudo rm -f /usr/local/bin/eclipse
 sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
 
 
