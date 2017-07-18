@@ -18,6 +18,9 @@ sudo apt-get update
 # Install common software
 sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven skype virtualbox-5.1
 
+# Fix Eclipse web components (such as JavaDocs)
+sudo apt-get --yes --force-yes install libwebkitgtk-3.0-0
+
 # Remove redundant software
 sudo apt-get --yes --force-yes --purge remove firefox*
 
