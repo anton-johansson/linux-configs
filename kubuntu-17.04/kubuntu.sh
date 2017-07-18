@@ -16,7 +16,7 @@ sudo dpkg --add-architecture i386
 sudo apt-get update
 
 # Install common software
-sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven skype virtualbox-5.0
+sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven skype virtualbox-5.1
 
 # Remove redundant software
 sudo apt-get --yes --force-yes --purge remove firefox*
