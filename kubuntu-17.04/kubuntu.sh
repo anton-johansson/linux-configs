@@ -5,9 +5,11 @@
 # Add necessary APT lists and APT keys
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
 sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/oracle-java.list'
-sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" > /etc/apt/sources.list.d/virtualbox.org.list' 
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" > /etc/apt/sources.list.d/virtualbox.org.list'
+sudo sh -c 'echo "deb https://download.docker.com/linux/ubuntu $(lsb_release -sc) stable" > /etc/apt/sources.list.d/docker.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc | sudo apt-key add -
+wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # Add 32-bits architecture (for Skype)
 sudo dpkg --add-architecture i386
@@ -16,10 +18,13 @@ sudo dpkg --add-architecture i386
 sudo apt-get update
 
 # Install common software
-sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven skype virtualbox-5.1 colordiff
+sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven skype virtualbox-5.1 colordiff docker-ce
 
 # Fix Eclipse web components (such as JavaDocs)
 sudo apt-get --yes --force-yes install libwebkitgtk-3.0-0
+
+# Add user to the docker group
+sudo gpasswd -a $USER docker
 
 # Remove redundant software
 sudo apt-get --yes --force-yes --purge remove firefox*
