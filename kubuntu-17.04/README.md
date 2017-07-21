@@ -13,6 +13,5 @@ Provides a bash script for configuring a Kubuntu 17.04 (Zesty Zapus) distributio
  * Subversion (CSV)
  * Meld (Diff tool)
  * VirtualBox (VM)
- * Skype (Communication)
  * Docker (Virtualization)
  * OpenSSH server (Remote connection)
