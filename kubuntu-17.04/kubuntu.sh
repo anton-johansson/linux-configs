@@ -23,9 +23,6 @@ sudo apt-get --yes --force-yes install libwebkitgtk-3.0-0
 # Add user to the docker group
 sudo gpasswd -a $USER docker
 
-# Remove redundant software
-sudo apt-get --yes --force-yes --purge remove firefox*
-
 # Install Eclipse Mars
 cd /opt
 sudo wget http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-java-oxygen-R-linux-gtk-x86_64.tar.gz
