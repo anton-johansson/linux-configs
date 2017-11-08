@@ -37,3 +37,16 @@ echo "Comment=Eclipse Integrated Development Environment" >> eclipse.desktop
 echo "Icon=/opt/eclipse/icon.xpm" >> eclipse.desktop
 echo "Exec=/opt/eclipse/eclipse" >> eclipse.desktop
 echo "Categories=Development;IDE;Java;" >> eclipse.desktop
+
+# Install Postman
+cd /opt
+sudo wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -zxvf postman.tar.gz
+cd ~/.local/share/applications
+echo "[Desktop Entry]" > postman.desktop
+echo "Type=Application" >> postman.desktop
+echo "Name=Postman" >> postman.desktop
+echo "Comment=Postman" >> postman.desktop
+echo "Icon=/opt/Postman/resources/app/assets/icon.png" >> postman.desktop
+echo "Exec=/opt/Postman/Postman" >> postman.desktop
+echo "Categories=HTTP;REST;Client;" >> postman.desktop
