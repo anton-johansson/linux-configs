@@ -15,3 +15,4 @@ Provides a bash script for configuring a Kubuntu 17.04 (Zesty Zapus) distributio
  * VirtualBox (VM)
  * Docker (Virtualization)
  * OpenSSH server (Remote connection)
+ * Postman (HTTP requests tool)
