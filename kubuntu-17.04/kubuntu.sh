@@ -50,3 +50,17 @@ echo "Comment=Postman" >> postman.desktop
 echo "Icon=/opt/Postman/resources/app/assets/icon.png" >> postman.desktop
 echo "Exec=/opt/Postman/Postman" >> postman.desktop
 echo "Categories=HTTP;REST;Client;" >> postman.desktop
+
+# Install Microsoft SQL Operations Studio
+cd /opt
+sudo wget https://go.microsoft.com/fwlink/?linkid=862646 -O sql-operations-studio.tar.gz
+sudo tar -zxvf sql-operations-studio.tar.gz
+cd ~/.local/share/applications
+echo "[Desktop Entry]" > sql-operations-studio.desktop
+echo "Type=Application" >> sql-operations-studio.desktop
+echo "Name=SQL Operations Studio" >> sql-operations-studio.desktop
+echo "Comment=Microsoft SQL Operations Studio" >> sql-operations-studio.desktop
+echo "Icon=/opt/sqlops-linux-x64/resources/app/resources/linux/code.png" >> sql-operations-studio.desktop
+echo "Exec=/opt/sqlops-linux-x64/sqlops" >> sql-operations-studio.desktop
+echo "Categories=Development;IDE;SQL;" >> sql-operations-studio.desktop
+sudo rm /opt/sql-operations-studio.tar.gz
