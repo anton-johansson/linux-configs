@@ -1,6 +1,6 @@
-# Kubuntu 17.04 (Zesty Zapus)
+# Kubuntu 17.10 (Artful Aardvark)
 
-Provides a bash script for configuring a Kubuntu 17.04 (Zesty Zapus) distribution.
+Provides a bash script for configuring a Kubuntu 17.10 (Artful Aardvark) distribution.
 
 
 ## Software
