@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script configures a Kubuntu 17.04 (Zesty Zapus) distribution.
+# This script configures a Kubuntu 17.10 (Artful Aardvark) distribution.
 
 # Add necessary APT lists and APT keys
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
