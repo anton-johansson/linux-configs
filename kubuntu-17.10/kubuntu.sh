@@ -14,16 +14,16 @@ wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 wget -q -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 # Update repository
-sudo apt-get update
+sudo apt update
 
 # Install common software
-sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven virtualbox-5.1 colordiff docker-ce openssh-server
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven virtualbox-5.1 colordiff docker-ce openssh-server
 
 # Fix Eclipse web components (such as JavaDocs)
-sudo apt-get --yes --force-yes install libwebkitgtk-3.0-0
+sudo apt --yes --force-yes install libwebkitgtk-3.0-0
 
 # Kubernetes (optional, uncomment to install)
-#sudo apt-get install kubelet kubeadm kubectl kubernetes-cni
+#sudo apt install kubelet kubeadm kubectl kubernetes-cni
 
 # Add user to the docker group
 sudo gpasswd -a $USER docker
