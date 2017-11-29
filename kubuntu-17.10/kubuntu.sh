@@ -7,9 +7,11 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc
 sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/oracle-java.list'
 sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" > /etc/apt/sources.list.d/virtualbox.org.list'
 sudo sh -c 'echo "deb https://download.docker.com/linux/ubuntu $(lsb_release -sc) stable" > /etc/apt/sources.list.d/docker.list'
+sudo sh -c 'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc | sudo apt-key add -
 wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+wget -q -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 # Update repository
 sudo apt-get update
@@ -19,6 +21,9 @@ sudo apt-get --yes --force-yes install zsh subversion git meld google-chrome-sta
 
 # Fix Eclipse web components (such as JavaDocs)
 sudo apt-get --yes --force-yes install libwebkitgtk-3.0-0
+
+# Kubernetes (optional, uncomment to install)
+#sudo apt-get install kubelet kubeadm kubectl kubernetes-cni
 
 # Add user to the docker group
 sudo gpasswd -a $USER docker
