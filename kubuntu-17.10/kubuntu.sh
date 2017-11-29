@@ -22,8 +22,11 @@ sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable 
 # Fix Eclipse web components (such as JavaDocs)
 sudo apt --yes --force-yes install libwebkitgtk-3.0-0
 
-# Kubernetes (optional, uncomment to install)
+# Kubernetes & minikube (optional, uncomment to install)
 #sudo apt install kubelet kubeadm kubectl kubernetes-cni
+#wget -O minikube https://storage.googleapis.com/minikube/releases/v0.23.0/minikube-linux-amd64
+#chmod +x minikube
+#sudo mv minikube /usr/local/bin/
 
 # Add user to the docker group
 sudo gpasswd -a $USER docker
