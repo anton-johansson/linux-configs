@@ -7,17 +7,19 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc
 sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/oracle-java.list'
 sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" > /etc/apt/sources.list.d/virtualbox.org.list'
 sudo sh -c 'echo "deb https://download.docker.com/linux/ubuntu $(lsb_release -sc) stable" > /etc/apt/sources.list.d/docker.list'
+sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'
 sudo sh -c 'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc | sudo apt-key add -
 wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 wget -q -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410
 
 # Update repository
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven virtualbox-5.1 colordiff docker-ce openssh-server
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven virtualbox-5.1 colordiff docker-ce openssh-server spotify
 
 # Fix Eclipse web components (such as JavaDocs)
 sudo apt --yes --force-yes install libwebkitgtk-3.0-0
