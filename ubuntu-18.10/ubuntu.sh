@@ -14,17 +14,18 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 
+# Repository for Docker
+sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list'
+wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
 # Update repository
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server spotify-client
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server spotify-client docker-ce
 
 # Fix Eclipse web components (such as JavaDocs)
 #sudo apt --yes --force-yes install libwebkitgtk-3.0-0
-
-# Add user to the docker group
-#sudo gpasswd -a $USER docker
 
 # Install Eclipse
 cd /opt
