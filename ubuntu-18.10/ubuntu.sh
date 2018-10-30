@@ -29,8 +29,8 @@ sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable 
 
 # Install Eclipse
 cd /opt
-sudo wget http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/2018-09/R/eclipse-java-2018-09-linux-gtk-x86_64.tar.gz
-sudo tar -zxvf eclipse-java-2018-09-linux-gtk-x86_64.tar.gz
+sudo wget http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/2018-09/R/eclipse-java-2018-09-linux-gtk-x86_64.tar.gz -O eclipse.tar.gz
+sudo tar -zxvf eclipse.gz
 sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
 mkdir -p ~/.local/share/applications
 cd ~/.local/share/applications
@@ -41,6 +41,7 @@ echo "Comment=Eclipse Integrated Development Environment" >> eclipse.desktop
 echo "Icon=/opt/eclipse/icon.xpm" >> eclipse.desktop
 echo "Exec=/opt/eclipse/eclipse" >> eclipse.desktop
 echo "Categories=Development;IDE;Java;" >> eclipse.desktop
+sudo rm /opt/eclipse.tar.gz
 
 # Install Postman
 cd /opt
@@ -54,6 +55,7 @@ echo "Comment=Postman" >> postman.desktop
 echo "Icon=/opt/Postman/app/resources/app/assets/icon.png" >> postman.desktop
 echo "Exec=/opt/Postman/app/Postman" >> postman.desktop
 echo "Categories=HTTP;REST;Client;" >> postman.desktop
+sudo rm /opt/postman.tar.gz
 
 # Install Microsoft Azue Data Studio
 cd /opt
