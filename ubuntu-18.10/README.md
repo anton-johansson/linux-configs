@@ -15,3 +15,4 @@ Provides a bash script for configuring a Kubuntu 17.10 (Artful Aardvark) distrib
  * Docker (Virtualization)
  * OpenSSH server (Remote connection)
  * Postman (HTTP requests tool)
+ * Microsoft Azure Data Studio (Integrated Development Environment)
