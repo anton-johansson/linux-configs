@@ -30,7 +30,7 @@ sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable 
 # Install Eclipse
 cd /opt
 sudo wget http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/2018-09/R/eclipse-java-2018-09-linux-gtk-x86_64.tar.gz -O eclipse.tar.gz
-sudo tar -zxvf eclipse.gz
+sudo tar -zxvf eclipse.tar.gz
 sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
 mkdir -p ~/.local/share/applications
 cd ~/.local/share/applications
