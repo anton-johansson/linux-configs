@@ -22,7 +22,7 @@ wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server spotify-client docker-ce
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce
 
 # Fix Eclipse web components (such as JavaDocs)
 #sudo apt --yes --force-yes install libwebkitgtk-3.0-0

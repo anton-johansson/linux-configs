@@ -14,5 +14,6 @@ Provides a bash script for configuring a Kubuntu 17.10 (Artful Aardvark) distrib
  * Meld (Diff tool)
  * Docker (Virtualization)
  * OpenSSH server (Remote connection)
- * Postman (HTTP requests tool)
+ * Postman (graphical HTTP requests tool)
+ * curl (command line HTTP request tool)
  * Microsoft Azure Data Studio (Integrated Development Environment)
