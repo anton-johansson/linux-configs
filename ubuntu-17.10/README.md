@@ -1,6 +1,6 @@
-# Kubuntu 17.10 (Artful Aardvark)
+# Ubuntu 17.10 (Artful Aardvark)
 
-Provides a bash script for configuring a Kubuntu 17.10 (Artful Aardvark) distribution.
+Provides a bash script for configuring a Ubuntu 17.10 (Artful Aardvark) distribution.
 
 
 ## Software
