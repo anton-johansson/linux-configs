@@ -7,7 +7,7 @@ Provides configuration scripts for various Linux distributions.
 
   * [Uubuntu 18.10 (Cosmic Cuttlefish)](kubuntu-18.10/)
   * ~~[Kubuntu 17.10 (Artful Aardvark)](kubuntu-17.10/)~~
-  * ~~[Ubuntu 15.10 (Wily Werewolf)](ubuntu/)~~
+  * ~~[Ubuntu 15.10 (Wily Werewolf)](ubuntu-15.10/)~~
   * ~~[Linux Mint](linux-mint/)~~
 
 
