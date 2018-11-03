@@ -1,6 +1,6 @@
 # Ubuntu 18.10 (Cosmic Cuttlefish)
 
-Provides a bash script for configuring a Kubuntu 17.10 (Artful Aardvark) distribution.
+Provides a bash script for configuring a Ubuntu 18.10 (Cosmic Cuttlefish) distribution.
 
 
 ## Software
