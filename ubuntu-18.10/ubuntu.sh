@@ -24,9 +24,6 @@ sudo apt update
 # Install common software
 sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce
 
-# Fix Eclipse web components (such as JavaDocs)
-#sudo apt --yes --force-yes install libwebkitgtk-3.0-0
-
 # Install Eclipse
 cd /opt
 sudo wget http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/2018-09/R/eclipse-java-2018-09-linux-gtk-x86_64.tar.gz -O eclipse.tar.gz
