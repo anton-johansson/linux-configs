@@ -3,6 +3,13 @@
 Provides configuration scripts for various Linux distributions.
 
 
+## Installing
+
+```shell
+$ wget -q -O - https://raw.githubusercontent.com/anton-johansson/linux-configs/master/ubuntu-18.10/ubuntu.sh | sudo bash
+```
+
+
 ## Complete setups
 
   * [Ubuntu 18.10 (Cosmic Cuttlefish)](ubuntu-18.10/)
