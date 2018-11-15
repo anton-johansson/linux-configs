@@ -18,11 +18,15 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79
 sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list'
 wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
+# Repository for Microsoft
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/ubuntu/17.04/prod zesty main" > /etc/apt/sources.list.d/microsoft.list'
+wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
 # Update repository
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip mssql-cli
 
 # Add user to the docker group
 sudo gpasswd --add $USER docker

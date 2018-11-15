@@ -17,4 +17,5 @@ Provides a bash script for configuring a Ubuntu 18.10 (Cosmic Cuttlefish) distri
  * Postman (graphical HTTP requests tool)
  * curl (command line HTTP request tool)
  * Microsoft Azure Data Studio (Integrated Development Environment)
+ * mssql-cli (command line SQL tool)
  * xclip (clipboard utility tool)
