@@ -27,6 +27,7 @@ sudo apt update
 
 # Install common software
 sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip mssql-cli
+sudo apt upgrade
 
 # Add user to the docker group
 sudo gpasswd --add $USER docker
