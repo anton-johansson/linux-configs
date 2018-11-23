@@ -26,7 +26,7 @@ wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key ad
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip mssql-cli
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip mssql-cli make
 sudo apt upgrade
 
 # Add user to the docker group
