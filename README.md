@@ -2,6 +2,8 @@
 
 Provides configuration scripts for various Linux distributions.
 
+These configurations work best together with the [dotfiles](https://github.com/anton-johansson/dotfiles).
+
 
 ## Installing
 
