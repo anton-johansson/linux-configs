@@ -26,3 +26,4 @@ See [dotfiles](https://github.com/anton-johansson/dotfiles)
 ## Tools
 
   * [Eclipse](tools/eclipse/)
+  * [NodeJS](tools/nodejs/)
