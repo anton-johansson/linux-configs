@@ -9,7 +9,7 @@ Instructions for installing NodeJS.
 
 ```sh
 $ mkdir ~/.npm-packages
-$ echo "prefix=~/.npm-packages" >> ~/.npmrc
+$ echo "prefix=$HOME/.npm-packages" >> ~/.npmrc
 $ sudo apt remove nodejs nodejs-doc
 $ curl -L https://git.io/n-install | sudo N_PREFIX=/opt/n bash
 ```
