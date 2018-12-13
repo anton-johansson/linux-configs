@@ -13,6 +13,7 @@ Provides a bash script for configuring a Ubuntu 18.10 (Cosmic Cuttlefish) distri
  * Subversion (CSV)
  * Meld (Diff tool)
  * Docker (Virtualization)
+ * VirtualBox (Virtualization)
  * OpenSSH server (Remote connection)
  * Postman (graphical HTTP requests tool)
  * curl (command line HTTP request tool)

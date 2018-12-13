@@ -22,11 +22,15 @@ wget -q -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/ubuntu/17.04/prod zesty main" > /etc/apt/sources.list.d/microsoft.list'
 wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
+# Repository for VirtualBox
+sudo sh -c 'echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" > /etc/apt/sources.list.d/virtualbox.list'
+wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc | sudo apt-key add -
+
 # Update repository
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce xclip mssql-cli make
+sudo apt --yes --force-yes install zsh subversion git meld google-chrome-stable oracle-java8-installer maven colordiff openssh-server curl spotify-client docker-ce virtualbox-5.2 xclip mssql-cli make
 sudo apt upgrade
 
 # Add user to the docker group
