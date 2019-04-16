@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # This script installs Eclipse.
-# Usage: sudo ./eclipse.sh neon 1a
+# Usage: sudo ./eclipse.sh 2019 R
 
 
 ###############################################
@@ -32,7 +32,7 @@ fi
 ###############################################
 
 echo "Downloading Eclipse $generation $version..."
-sudo wget -O /opt/eclipse.tar.gz http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/$generation/$version/eclipse-java-$generation-$version-linux-gtk-x86_64.tar.gz
+wget -O /opt/eclipse.tar.gz http://saimei.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/$generation/$version/eclipse-java-$generation-$version-linux-gtk-x86_64.tar.gz
 
 if [ $? -ne 0 ]; then
     echo "Could not find Eclipse version"
@@ -43,11 +43,11 @@ fi
 # Extract Eclipse
 ###############################################
 
-sudo rm -rf /opt/eclipse
-sudo tar -zxf /opt/eclipse.tar.gz -C /opt/
-sudo rm -f /opt/eclipse.tar.gz
-sudo rm -f /usr/local/bin/eclipse
-sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
+rm -rf /opt/eclipse
+tar -zxf /opt/eclipse.tar.gz -C /opt/
+rm -f /opt/eclipse.tar.gz
+rm -f /usr/local/bin/eclipse
+ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
 
 
 ###############################################
