@@ -68,7 +68,7 @@ sudo rm /opt/postman.tar.gz
 
 # Install Microsoft Azue Data Studio
 cd /opt
-sudo wget https://go.microsoft.com/fwlink/?linkid=2030741 -O azure-data-studio.tar.gz
+sudo wget https://go.microsoft.com/fwlink/?linkid=2091488 -O azure-data-studio.tar.gz
 sudo tar -zxvf azure-data-studio.tar.gz
 cd ~/.local/share/applications
 echo "[Desktop Entry]" > azure-data-studio.desktop
