@@ -15,6 +15,7 @@ $ wget -q -O - https://raw.githubusercontent.com/anton-johansson/linux-configs/m
 ## Complete setups
 
   * [Ubuntu 22.10 (Kinetic Kudo)](ubuntu-22.10/)
+  * [Kali Linux 2024.3](kali-2024.3/)
   * ~~[Ubuntu 18.10 (Cosmic Cuttlefish)](ubuntu-18.10/)~~
   * ~~[Ubuntu 17.10 (Artful Aardvark)](ubuntu-17.10/)~~
   * ~~[Ubuntu 15.10 (Wily Werewolf)](ubuntu-15.10/)~~
