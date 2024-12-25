@@ -66,3 +66,21 @@ Change default realm and add realms to `/etc/krd5.conf`:
 		kdc = c2.mydomain.local
 	}
 ```
+
+
+## Queryeer
+
+Go to this download page and download the latest ZIP archive:  
+https://github.com/kuseman/queryeer/releases
+
+Unzip it and move it into `/opt/queryeer`.
+
+Create the file `$HOME/.local/share/applications/queryeer.desktop` with the content:
+
+```
+[Desktop Entry]
+Type=Application
+Name=Queryeer
+Exec=/opt/queryeer/bin/queryeer.sh
+Categories=Development;IDE;SQL;
+```
