@@ -30,6 +30,7 @@ update-ca-certificates
  * IntelliJ IDEA Community Edition
  * Docker
  * Visual Studio Code
+ * kubectl
 
 
 ## Download Java and install alternatives
