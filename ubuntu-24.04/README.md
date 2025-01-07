@@ -13,6 +13,7 @@ Provides a bash script for configuring a Ubuntu 24.04 (Noble Numbat) distributio
  * Meld (diff tool)
  * Kerberos (Windows authentication)
  * Maven (Java Project Management)
+ * File Roller (archive manager)
 
 
 ## Add certificate authorities
@@ -31,6 +32,7 @@ update-ca-certificates
  * Docker
  * Visual Studio Code
  * kubectl
+ * helm
 
 
 ## Download Java and install alternatives
