@@ -87,3 +87,15 @@ Name=Queryeer
 Exec=/opt/queryeer/bin/queryeer.sh
 Categories=Development;IDE;SQL;
 ```
+
+
+## Citrix workspace
+
+Download the package "Full Package (Self-Service Support) - Citrix Workspace app for Linux (x86_64)" from here:  
+https://www.citrix.com/downloads/workspace-app/linux/workspace-app-for-linux-latest.html
+
+Install it using the following command:
+
+```shell
+$ sudo dpkg --install ./icaclient_24.11.0.85_amd64.deb
+```
