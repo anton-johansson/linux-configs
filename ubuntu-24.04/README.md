@@ -14,6 +14,7 @@ Provides a bash script for configuring a Ubuntu 24.04 (Noble Numbat) distributio
  * Kerberos (Windows authentication)
  * Maven (Java Project Management)
  * File Roller (archive manager)
+ * Remmina (Remote desktop)
 
 
 ## Add certificate authorities
