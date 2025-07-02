@@ -15,6 +15,7 @@ Provides a bash script for configuring a Ubuntu 24.04 (Noble Numbat) distributio
  * Maven (Java Project Management)
  * File Roller (archive manager)
  * Remmina (Remote desktop)
+ * ncdu (disk usage analyzer)
 
 
 ## Add certificate authorities

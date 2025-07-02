@@ -6,7 +6,7 @@
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld colordiff curl xclip krb5-user file-roller dos2unix remmina
+sudo apt --yes --force-yes install zsh subversion git meld colordiff curl xclip krb5-user file-roller dos2unix remmina ncdu
 sudo apt upgrade
 
 # Create directory for additional certificates
