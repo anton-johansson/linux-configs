@@ -2,11 +2,15 @@
 #
 # This script configures a Ubuntu 24.04 (Noble Numbat) distribution.
 
+# Add Microsoft Azure repository
+curl -sL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/microsoft.gpg
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+
 # Update repository
 sudo apt update
 
 # Install common software
-sudo apt --yes --force-yes install zsh subversion git meld colordiff curl xclip krb5-user file-roller dos2unix remmina ncdu
+sudo apt --yes --force-yes install zsh subversion git meld colordiff curl xclip krb5-user file-roller dos2unix remmina ncdu azure-cli
 sudo apt upgrade
 
 # Create directory for additional certificates

@@ -16,6 +16,7 @@ Provides a bash script for configuring a Ubuntu 24.04 (Noble Numbat) distributio
  * File Roller (archive manager)
  * Remmina (Remote desktop)
  * ncdu (disk usage analyzer)
+ * Azure CLI
 
 
 ## Add certificate authorities
